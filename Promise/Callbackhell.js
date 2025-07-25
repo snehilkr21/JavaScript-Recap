@@ -8,6 +8,7 @@ API.createOrder(cart,function(){
     })
 })
 
+//promise chaining
 createOrder(cart)
 .then(function(orderId){
   return proceedToPayment(orderId)
